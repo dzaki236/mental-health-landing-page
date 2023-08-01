@@ -9,7 +9,6 @@ const Cta = () => {
                     <div className="btns">
                         <Link href='#links' to='links' smooth={true} offset={200} duration={800}>Explore Our Articles</Link>
                         <Link href='#contact' to='contact' smooth={true} duration={800}>Contact Our Helpline</Link>
-                        {/* <a href="#contact">Contact Our Helpline</a> */}
                     </div>
                 </div>
             </section>
