@@ -1,1 +1,1 @@
-#mental healt
+# mental health
