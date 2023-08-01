@@ -1,0 +1,344 @@
+@import url(https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Silkscreen&display=swap);
+
+.about,
+.hero {
+    height: 100vh;
+    display: flex
+}
+
+.cta .content,
+.hero .content,
+footer {
+    text-align: center
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+    background-color: #ffccd5
+}
+
+.hero .content {
+    background-color: #fff;
+    padding: 10px 80px 40px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #a4133c
+}
+
+.about,
+.contact,
+.cta .content{
+    background-color: #ff8fa3
+}
+.links{
+    background-color: #ffccd5
+}
+.about,
+.cta {
+    align-items: center
+}
+
+.hero .content h1 {
+    color: #a4133c;
+    font-family: Silkscreen, cursive;
+    font-size: 6rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.hero .content p {
+    color: #000;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    margin-top: -30px;
+    font-size: 16px
+}
+
+.about {
+    padding: 0 80px;
+}
+
+.contact,
+.cta,
+.links {
+    height: 100vh;
+    display: flex;
+    padding: 10px 80px
+}
+
+.about .content h2 {
+    color: #a4133c;
+    font-family: Silkscreen, cursive;
+    font-size: 3rem;
+    font-weight: lighter
+}
+
+.about .content p {
+    width: 100%;
+    color: #000;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px
+    
+}
+
+.cta {
+    background-image: radial-gradient(circle, #ff8fa3 1px, transparent 1px);
+    background-size: 50px 50px;
+    justify-content: center
+}
+
+.cta .content {
+    width: 50%;
+    padding: 30px 30px 60px
+}
+
+.cta .content h2 {
+    color: #a4133c;
+    font-family: Silkscreen, cursive;
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-bottom: 50px
+}
+
+.cta .content a,
+.links,
+footer {
+    color: #000;
+    font-family: "Atkinson Hyperlegible", sans-serif
+}
+
+.cta .content a {
+    padding: 10px 20px;
+    text-decoration: none
+}
+
+.cta .content a:first-child {
+    background-color: #fff;
+    margin-right: 30px
+}
+
+.cta .content a:last-child {
+    background-color: #a4133c;
+    color: #fff
+}
+
+.links {
+    align-items: center;
+    font-size: 20px
+}
+
+.links .content {
+    width: 100%
+}
+
+.links .content .link {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ff758f;
+    margin-bottom: 20px;
+    color: #000
+}
+
+.links .content .link:last-child {
+    margin-bottom: 0
+}
+
+.links .content .link .date {
+    margin-right: 60px;
+    color: #a4133c
+}
+
+.links .content .link .title {
+    flex: 2
+}
+
+footer {
+    padding: 50px 0;
+    font-size: 16px
+}
+
+footer .icons {
+    margin-bottom: 20px
+}
+
+footer .icons a {
+    color: #a4133c;
+    margin: 0 10px;
+    text-decoration: none
+}
+
+.contact {
+    align-items: center
+}
+
+.contact img {
+    width: 430px;
+    filter: grayscale(91%) sepia(100%) hue-rotate(291deg) saturate(363%) contrast(99%);
+    -webkit-filter: grayscale(91%) sepia(100%) hue-rotate(291deg) saturate(363%) contrast(99%);
+    -moz-filter: grayscale(91%) sepia(100%) hue-rotate(291deg) saturate(363%) contrast(99%);
+    -webkit-animation: .5s cubic-bezier(.55, .085, .68, .53) both slide-top;
+    animation: .5s cubic-bezier(.55, .085, .68, .53) both slide-top
+}
+
+.contact .right {
+    padding: 0 0 0 40px
+}
+
+.contact .right h2 {
+    color: #a4133c;
+    font-family: Silkscreen, cursive;
+    font-size: 2.5rem;
+    font-weight: lighter
+}
+
+.contact .right p {
+    color: #000;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 20px
+}
+
+.contact .right i {
+    color: #a4133c
+}
+
+.contact a {
+    text-decoration: none;
+    color: inherit
+}
+
+@media (max-width:768px) {
+
+    .about,
+    .cta {
+        height: auto
+    }
+
+    .hero .content h1 {
+        font-size: 3rem
+    }
+
+    .contact,
+    .hero,
+    .links {
+        height: auto;
+        padding: 80px 70px
+    }
+
+    .about {
+        padding: 30px 70px
+    }
+
+    .about .content p {
+        width: 100%
+    }
+
+    .cta {
+        background-size: 30px 30px;
+        padding: 80px 70px
+    }
+
+    .cta .content {
+        width: 100%;
+        text-align: center
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .contact .right {
+        padding: 0
+    }
+
+    .links .content .link .date {
+        margin-right: 20px
+    }
+}
+
+@media (max-width:640px) {
+
+    .cta,
+    .hero {
+        height: auto
+    }
+
+    .about,
+    .contact,
+    .links {
+        height: auto;
+        padding: 40px 30px
+    }
+
+    .about .content h2,
+    .contact .right h2 {
+        font-size: 1.5rem
+    }
+
+    .about .content p,
+    .contact .right p,
+    .cta .content .btns a,
+    .links .link div,
+    footer {
+        font-size: 12px
+    }
+
+    .hero {
+        padding: 50px 100px
+    }
+
+    .hero .content h1 {
+        font-size: 2rem
+    }
+
+    .hero .content {
+        padding: 10px 20px 30px;
+        border: 3px solid #a4133c
+    }
+
+    .hero .content p {
+        font-size: 12px;
+        margin-top: -15px
+    }
+
+    .cta {
+        padding: 50px 40px
+    }
+
+    .cta .content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px
+    }
+
+    .cta .content .btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .cta .btns a:first-child {
+        margin-right: 0;
+        margin-bottom: 10px
+    }
+
+    .contact img {
+        width: 100%
+    }
+
+    .links .content .link .date {
+        margin-right: 10px
+    }
+}
