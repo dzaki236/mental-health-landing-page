@@ -5,7 +5,9 @@ const Hero = () => {
     const style = {
         link__:{
             color:"black",
-            textDecoration:'none'
+            textDecoration:'none',
+            marginTop:'5%',
+            display:'block', 
         }
     }
     return (

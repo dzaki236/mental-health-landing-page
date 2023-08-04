@@ -1,344 +1,213 @@
 @import url(https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Silkscreen&display=swap);
 
-.about,
-.hero {
-    height: 100vh;
-    display: flex
+:root {
+    --dark: #262626;
+    --primary: #a4133c;
+    --secondary: #ff8fa3;
+    --tertiary: #ffccd5;
+    --quaternary: #ffffff;
 }
 
-.cta .content,
-.hero .content,
-footer {
-    text-align: center
+/* Random Things */
+
+.swal2-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.swal2-html-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#root{
+    overflow-x: hidden !important;
 }
 
-html {
-    scroll-behavior: smooth
-}
+* { scroll-behavior: smooth; }
 
-body {
-    margin: 0;
-    padding: 0
-}
 
-.hero {
-    align-items: center;
-    justify-content: center;
-    background-color: #ffccd5
-}
 
-.hero .content {
-    background-color: #fff;
-    padding: 10px 80px 40px;
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    border: 8px solid #a4133c
-}
+body { margin: 0; padding: 0;  }
 
-.about,
-.contact,
-.cta .content{
-    background-color: #ff8fa3
-}
-.links{
-    background-color: #ffccd5
-}
-.about,
-.cta {
-    align-items: center
-}
-
-.hero .content h1 {
-    color: #a4133c;
-    font-family: Silkscreen, cursive;
-    font-size: 6rem;
-    font-weight: lighter;
-    text-align: center;
-}
-
-.hero .content p {
-    color: #000;
-    font-family: "Atkinson Hyperlegible", sans-serif;
-    margin-top: -30px;
-    font-size: 16px
-}
-
-.about {
-    padding: 0 80px;
-}
-
-.contact,
-.cta,
-.links {
-    height: 100vh;
-    display: flex;
-    padding: 10px 80px
-}
-
-.about .content h2 {
-    color: #a4133c;
-    font-family: Silkscreen, cursive;
-    font-size: 3rem;
-    font-weight: lighter
-}
-
-.about .content p {
-    width: 100%;
-    color: #000;
-    font-family: "Atkinson Hyperlegible", sans-serif;
-    font-size: 20px;
-    margin-bottom: 30px
-    
-}
-
-.cta {
-    background-image: radial-gradient(circle, #ff8fa3 1px, transparent 1px);
-    background-size: 50px 50px;
-    justify-content: center
-}
-
-.cta .content {
-    width: 50%;
-    padding: 30px 30px 60px
-}
-
-.cta .content h2 {
-    color: #a4133c;
-    font-family: Silkscreen, cursive;
-    font-size: 3rem;
-    font-weight: lighter;
-    margin-bottom: 50px
-}
-
-.cta .content a,
-.links,
-footer {
-    color: #000;
-    font-family: "Atkinson Hyperlegible", sans-serif
-}
-
-.cta .content a {
-    padding: 10px 20px;
-    text-decoration: none
-}
-
-.cta .content a:first-child {
-    background-color: #fff;
-    margin-right: 30px
-}
-
-.cta .content a:last-child {
-    background-color: #a4133c;
-    color: #fff
-}
-
-.links {
-    align-items: center;
-    font-size: 20px
-}
-
-.links .content {
-    width: 100%
-}
-
-.links .content .link {
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ff758f;
-    margin-bottom: 20px;
-    color: #000
-}
-
-.links .content .link:last-child {
-    margin-bottom: 0
-}
-
-.links .content .link .date {
-    margin-right: 60px;
-    color: #a4133c
-}
-
-.links .content .link .title {
-    flex: 2
-}
-
-footer {
-    padding: 50px 0;
-    font-size: 16px
-}
-
-footer .icons {
-    margin-bottom: 20px
-}
-
-footer .icons a {
-    color: #a4133c;
-    margin: 0 10px;
-    text-decoration: none
-}
-
-.contact {
-    align-items: center
-}
-
-.contact img {
-    width: 430px;
+img {
     filter: grayscale(91%) sepia(100%) hue-rotate(291deg) saturate(363%) contrast(99%);
     -webkit-filter: grayscale(91%) sepia(100%) hue-rotate(291deg) saturate(363%) contrast(99%);
     -moz-filter: grayscale(91%) sepia(100%) hue-rotate(291deg) saturate(363%) contrast(99%);
-    -webkit-animation: .5s cubic-bezier(.55, .085, .68, .53) both slide-top;
-    animation: .5s cubic-bezier(.55, .085, .68, .53) both slide-top
+    -webkit-animation: .5s cubic-bezier(.55, .085, .68, .53) both slide-top
 }
 
-.contact .right {
-    padding: 0 0 0 40px
-}
+.cta,
+.helpline {background-image: radial-gradient(circle, var(--secondary) 1px, transparent 1px);background-size: 50px 50px;}
 
-.contact .right h2 {
-    color: #a4133c;
-    font-family: Silkscreen, cursive;
-    font-size: 2.5rem;
-    font-weight: lighter
-}
+section { height: 100vh; display: flex; align-items: center; }
 
-.contact .right p {
-    color: #000;
-    font-family: "Atkinson Hyperlegible", sans-serif;
-    font-size: 20px
-}
+.about .content h2,
+.foreword .right h2 {color: var(--primary);font-family: Silkscreen, cursive;font-size: 3rem;font-weight: lighter}
 
-.contact .right i {
-    color: #a4133c
-}
+.about .content p,
+.foreword .right p {color: var(--dark);font-family: "Atkinson Hyperlegible", sans-serif;font-size: 20px}
 
-.contact a {
-    text-decoration: none;
-    color: inherit
-}
+/* Header & Nav */
 
-@media (max-width:768px) {
+header{position: absolute;z-index: 99;right: 60px;top: 25px;}
+header input[type=checkbox]{appearance: none;-moz-appearance: none;-webkit-appearance: none;cursor: pointer}
+header input{display: block;width: 35px;height: 30px;position: absolute;cursor: pointer;opacity: 0;z-index: 2;top: 2px;-webkit-touch-callout: none}
+header input:checked~nav ul{transform: none;opacity: 1;transition: transform .5s}
+header #burger{font-size: 2rem;color: var(--primary)}
+header nav{position: absolute;overflow: hidden;top: 50px;right: 0;}
+header nav ul{list-style: none;overflow: hidden;margin: 0;padding: 0;transform: translateX(180px);transition: .5s;opacity: 0}
+header nav ul li{display: block;background-color: var(--primary);color: var(--quaternary)}
+header nav ul li:hover{background-color: var(--secondary)}
+header nav ul li a{display: block;text-decoration: none;color: var(--quaternary);padding: 10px;width: 100%;font-family: "Atkinson Hyperlegible", sans-serif}
 
-    .about,
-    .cta {
-        height: auto
-    }
+/* Hero */
 
-    .hero .content h1 {
-        font-size: 3rem
-    }
+.hero{justify-content: center;background-color: var(--tertiary)}
+.hero .content{background-color: var(--quaternary);padding: 10px 60px 70px;display: flexbox;justify-content: center;align-items: center;border: 8px solid var(--primary);text-align: center}
+.hero .content h1{color: var(--primary);font-family: Silkscreen, cursive;font-size: 6rem;font-weight: lighter}
+.hero .content p{color: var(--dark);font-family: "Atkinson Hyperlegible", sans-serif;margin-top: -50px;font-size: 16px}
 
-    .contact,
+/* About */
+
+.about{padding: 0 80px;background-color: var(--secondary)}
+.about .content p{width: 100%;}
+
+/* CTA */
+
+.cta{justify-content: center;padding: 10px 80px;text-align: center}
+.cta .content{width: 50%;background-color: var(--tertiary);padding: 30px 30px 80px}
+.cta .content h2{color: var(--primary);font-family: Silkscreen, cursive;font-size: 3rem;font-weight: lighter;margin-bottom: 50px}
+.cta .content .btns{display: flex;justify-content: center;align-items: center;flex-wrap: wrap;gap: 1rem}
+.cta .content .btns a{padding: 10px 20px;text-decoration: none;font-family: "Atkinson Hyperlegible", sans-serif}
+.cta .content .btns a:first-child{background-color: var(--quaternary);color: var(--dark)}
+.cta .content .btns a:last-child{background-color: var(--primary);color: var(--quaternary)}
+
+/* Foreword */
+
+.foreword{padding: 10px 80px;background-color: var(--secondary);gap: 40px}
+.foreword img{width: 430px}
+
+/* Helpline */
+
+.helpline{justify-content: center;}
+.helpline .content{height: 400px;overflow: hidden; display: flex;align-items: center;justify-content: center;}
+.helpline .content .right{background: var(--tertiary);padding: 40px;width: 500px;font-family: "Atkinson Hyperlegible", sans-serif}
+.helpline .content .right h1{color: var(--primary);font-size: 2rem;font-weight: lighter;font-family: Silkscreen, cursive;margin-bottom: 30px}
+.helpline .content .right form .set{display: flex;flex-wrap: wrap;gap: 1.5rem;margin-bottom: 25px}
+.helpline .content .right form .set input{border: none;width: 40%; height: 35px;padding-left: 15px}
+.helpline .content .right form input,
+.helpline .content .right form .status{color: var(--dark)}
+.helpline .content .right form .status{display: flex;align-items: center;gap: 5px;margin-bottom: 15px}
+.helpline .content .right form .status label{font-size: x-small}
+.helpline .content .right form .status button{height: 38px;line-height: 38px;width: 100px;border: none;color: var(--quaternary);background-color: var(--primary);cursor: pointer}
+.helpline .content .right form .status #warning{font-size: small;color: red}
+
+/* Links */
+
+.links{padding: 10px 80px;background-color: var(--secondary);font-size: 20px;color: var(--dark);font-family: "Atkinson Hyperlegible", sans-serif}
+.links .content{width: 100%}
+.links .content .link{text-decoration: none;display: flex;justify-content: space-between;gap: 30px;border-bottom: 1px solid #ff758f;padding: 15px 0;margin-bottom: 15px;color: var(--dark)}
+.links .content .link:last-child{margin-bottom: 0}
+.links .content .link .date,
+.links .content .link .goto{color: var(--primary)}
+.links .content .link .title{flex: 1}
+
+/* Footer */
+
+footer{background-color: var(--tertiary);padding: 50px 0;font-family: "Atkinson Hyperlegible", sans-serif;font-size: 16px;text-align: center;color: var(--dark)}
+footer .icons{display: flex;justify-content: center;margin-bottom: 30px}
+footer .icons a{color: var(--primary);text-decoration: none;margin: 0 15px;}
+
+@media (max-width: 768px) {
     .hero,
-    .links {
+    .cta,
+    .helpline {
         height: auto;
-        padding: 80px 70px
-    }
-
-    .about {
-        padding: 30px 70px
-    }
-
-    .about .content p {
-        width: 100%
-    }
-
-    .cta {
+        padding: 80px 70px;
         background-size: 30px 30px;
-        padding: 80px 70px
     }
 
-    .cta .content {
-        width: 100%;
-        text-align: center
-    }
+    .foreword,
+    .links {height: auto;padding: 80px 70px;}
 
-    .contact {
-        display: flex;
-        flex-wrap: wrap
-    }
+    /* Header */
 
-    .contact .right {
-        padding: 0
-    }
+    header {right: 30px;}
+    header #burger{font-size: 1.5rem;}
+    header nav {top: 40px;} 
+    header nav ul li a {font-size: 12px;}
 
-    .links .content .link .date {
-        margin-right: 20px
-    }
+    /* Hero */
+
+    .hero .content {padding-bottom: 40px;}
+    .hero .content h1 {font-size: 3.8rem;}
+    .hero .content p{margin-top: -30px; font-size: 16px}
+
+    /* About */
+
+    .about {height: auto;padding: 30px 70px;}
+    .about .content p {width: 100%;}
+
+    /* CTA */
+
+    .cta .content {width: 100%;}
+
+    /* foreword */
+
+    .foreword {display: flex;flex-wrap: wrap;}
+
+    /* Links */
+    .links .content .link .date{margin-right: 20px;}
+
+    /* Helpline */
+    .helpline .content{padding: 40px 0;}
+    .helpline .content .left {display: none;}
+    .helpline .content .right {width: 100%;padding: 30px;text-align: center;}
+    .helpline .content .right h1 {font-size: 2.5rem;}
+    .helpline .content .right form .set input {width: 40%; margin: 10px;}
+    .helpline .content .right form .set,
+    .helpline .content .right form .status {display: flex; justify-content: center; }
+    .helpline .content .right form .status :nth-child(odd) {margin-right: 5px;}
+    .helpline .content .right form .status:last-child {display: block;}
+    .helpline .content .right form .status:last-child button {margin-bottom: 10px;}
 }
 
 @media (max-width:640px) {
-
     .cta,
-    .hero {
-        height: auto
-    }
+    .hero,
+    .helpline {height: auto}
 
     .about,
-    .contact,
-    .links {
-        height: auto;
-        padding: 40px 30px
-    }
+    .foreword,
+    .links {height: auto;padding: 40px 30px;}
 
     .about .content h2,
-    .contact .right h2 {
-        font-size: 1.5rem
-    }
+    .foreword .right h2 {font-size: 1.5rem;}
 
     .about .content p,
-    .contact .right p,
+    .foreword .right p,
     .cta .content .btns a,
-    .links .link div,
-    footer {
-        font-size: 12px
-    }
+    .links .link .link-item,
+    footer {font-size: 12px}
 
-    .hero {
-        padding: 50px 100px
-    }
+    header {right: 25px;top: 15px;}
+    header nav {top: 25px;}
+    header #burger{font-size: 1rem;}
+    header nav ul li a {font-size: 10px;padding: 5px 7px;}
 
-    .hero .content h1 {
-        font-size: 2rem
-    }
+    .hero {padding: 50px 100px}
+    .hero .content {padding: 0 20px 30px;border: 3px solid var(--primary)}
+    .hero .content h1 {font-size: 2rem}
+    .hero .content p {font-size: 12px;margin-top: -15px}
 
-    .hero .content {
-        padding: 10px 20px 30px;
-        border: 3px solid #a4133c
-    }
+    .cta .content h2 {font-size: 1.5rem;margin-bottom: 30px}
+    .cta .btns a:first-child {margin-bottom: 10px}
 
-    .hero .content p {
-        font-size: 12px;
-        margin-top: -15px
-    }
+    .cta,
+    .helpline {padding: 50px 30px;}
 
-    .cta {
-        padding: 50px 40px
-    }
+    /* Helpline */
 
-    .cta .content h2 {
-        font-size: 1.5rem;
-        margin-bottom: 30px
-    }
-
-    .cta .content .btns {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center
-    }
-
-    .cta .btns a:first-child {
-        margin-right: 0;
-        margin-bottom: 10px
-    }
-
-    .contact img {
-        width: 100%
-    }
-
-    .links .content .link .date {
-        margin-right: 10px
-    }
+    .helpline .content{height: auto;}
+    .helpline .content .right {padding: 50px 20px;}
+    .helpline .content .right h1 {font-size: 1.5rem;}
+    .helpline .content .right form .set input {width: 100%; }
+    .helpline .content .right form .status :nth-child(odd) {margin-right: 5px;}
 }
