@@ -30,7 +30,6 @@ const Contact = () => {
     }
     if (postCode.length == 0) {
       notify("Kode pos tidak boleh kosong!");
-      // console.log(typeof postCode)
       return;
     }
     if (typeof parseInt(postCode) !== "number") {
@@ -63,7 +62,7 @@ const Contact = () => {
           </div>
           <div className="right">
             <h1>We`re Here to Listen and Support</h1>
-            <form id="myForm" onSubmit={validateForm}>
+            <form autoComplete="off" id="myForm" onSubmit={validateForm}>
               <div className="set">
                 <input
                   id="name"
